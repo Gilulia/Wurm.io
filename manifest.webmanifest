@@ -1,9 +1,9 @@
 {
-  "name": "Wurm.io",
-  "short_name": "Wurm",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#2ecc71",
-  "icons": []
+"name":"Wurm.io",
+"short_name":"Wurm",
+"start_url":"./index.html",
+"display":"standalone",
+"background_color":"#000000",
+"theme_color":"#2ecc71",
+"icons":[]
 }
