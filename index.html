@@ -1,23 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wurm.io</title>
-<link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#2ecc71">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wurm.io</title>
+
+  <link rel="manifest" href="./manifest.webmanifest">
+  <meta name="theme-color" content="#2ecc71">
+
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 <h1>Wurm.io 🐛</h1>
 <p>Steuerung: Pfeiltasten (PC) oder Wischen (Handy)</p>
+
 <canvas id="game"></canvas>
 <button onclick="startGame()">Start</button>
-<script src="app.js"></script>
+
+<script src="./app.js"></script>
+
 <script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js');
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js");
+  });
 }
 </script>
+
 </body>
 </html>
